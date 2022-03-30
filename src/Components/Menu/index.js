@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Menu() {
   return (
-    <nav>
+    <nav className="menu">
       <ul>
         <li>
           <NavLink to="/">
