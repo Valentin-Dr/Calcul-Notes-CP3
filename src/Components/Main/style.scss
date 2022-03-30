@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: green;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subject {
+    margin: auto;
+    min-width: 20%;
+    max-width: fit-content;
+    margin: 0 30px;
+    padding: 10px 0;
+    border-bottom: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: darkgreen;
+    border-radius: 20px;
+    &-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-title {
+        font-size: 2rem;
+        margin: 5px;
+        border-bottom: 1px rgb(12, 75, 0) solid;
+    }
+    &-delete {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(126, 0, 0);
+        border-radius: 50%;
+        border: 1px red solid;
+        margin-left: 10px;
+        &:hover {
+            border: 1px rgb(126, 0, 0) solid;
+            background-color: red;
+        }
+    }
+}
+
+input {
+    background: #005c00;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px #00440099 solid;
+    margin: 10px 0;
+    text-align: center;
+    &::placeholder {
+        text-align: center;
+        color: white;
+    }
+    &:focus {
+        background: #003f00;
+        color: rgb(0, 119, 0);
+        outline: none;
+        &::placeholder {
+            color: rgb(0, 119, 0);
+        }
+    }
+}
+
+button {
+    background-color: green;
+    margin: 0 10px;
+    height: 40px;
+}
+
+.allSubjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.groupInputs {
+    display: flex;
+    flex-direction: row;
+    & input {
+        margin: 20px 10px;
+    }
+}
